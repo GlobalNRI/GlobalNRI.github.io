@@ -192,3 +192,19 @@ footer {
     max-width: 750px;
 }
 
+/* ================= LOGO ================= */
+.logo a {
+    font-size: 26px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.logo a:hover {
+    color: #1D70B8; /* subtle hover effect */
+}
+
+
