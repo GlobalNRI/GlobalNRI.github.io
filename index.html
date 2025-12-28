@@ -1,93 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>NRI Global Guide</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalNRI | Visa, Jobs & Life Abroad</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>NRI Global</h1>
-    <p>Complete information for Indians living abroad</p>
+    <div class="navbar">
+        <div class="logo">GlobalNRI</div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Guides</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
 </header>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#country">Country Info</a>
-    <a href="#about">About</a>
-</nav>
-
-<section class="section">
-    <h2>Select Country</h2>
-
-   <select id="countrySelect" onchange="loadCountry()">
-    <option value="">-- Select Country --</option>
-
-    <optgroup label="Asia">
-        <option value="india">India</option>
-        <option value="japan">Japan</option>
-        <option value="china">China</option>
-        <option value="singapore">Singapore</option>
-        <option value="uae">United Arab Emirates</option>
-    </optgroup>
-
-    <optgroup label="Europe">
-        <option value="germany">Germany</option>
-        <option value="france">France</option>
-        <option value="belgium">Belgium</option>
-        <option value="netherlands">Netherlands</option>
-        <option value="sweden">Sweden</option>
-        <option value="italy">Italy</option>
-        <option value="spain">Spain</option>
-        <option value="switzerland">Switzerland</option>
-        <option value="norway">Norway</option>
-        <option value="poland">Poland</option>
-    </optgroup>
-
-    <optgroup label="North America">
-        <option value="usa">United States</option>
-        <option value="canada">Canada</option>
-        <option value="mexico">Mexico</option>
-    </optgroup>
-
-    <optgroup label="South America">
-        <option value="brazil">Brazil</option>
-        <option value="argentina">Argentina</option>
-        <option value="chile">Chile</option>
-        <option value="colombia">Colombia</option>
-    </optgroup>
-
-    <optgroup label="Africa">
-        <option value="southafrica">South Africa</option>
-        <option value="nigeria">Nigeria</option>
-        <option value="egypt">Egypt</option>
-        <option value="kenya">Kenya</option>
-    </optgroup>
-
-    <optgroup label="Oceania">
-        <option value="australia">Australia</option>
-        <option value="newzealand">New Zealand</option>
-    </optgroup>
-</select>
-
-
-    <div id="countryData" class="cards"></div>
-</section>
-
-<section id="about" class="section light">
-    <h2>About NRI Global Guide</h2>
+<section class="hero-box">
+    <h1>Your Global Life Starts Here</h1>
     <p>
-        This platform helps Non-Resident Indians understand visa processes,
-        cost of living, and lifestyle in countries across the world.
+        Trusted information on visas, jobs, finance, cost of living,
+        and life abroad for NRIs and aspiring immigrants.
     </p>
 </section>
 
+<section class="container">
+    <h2 class="section-title">Popular Topics</h2>
+
+    <div class="grid">
+        <div class="card">
+            <img src="https://source.unsplash.com/600x400/?visa,passport">
+            <div class="card-content">
+                <h3>Visa & Immigration</h3>
+                <p>Work visas, PR, dependent visas, and immigration rules.</p>
+                <a href="blog.html">Explore →</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://source.unsplash.com/600x400/?finance,tax">
+            <div class="card-content">
+                <h3>NRI Finance & Tax</h3>
+                <p>Banking, taxes, remittance, investments for NRIs.</p>
+                <a href="blog.html">Explore →</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://source.unsplash.com/600x400/?jobs,career">
+            <div class="card-content">
+                <h3>Job Opportunities</h3>
+                <p>Jobs abroad, salaries, work culture & job portals.</p>
+                <a href="blog.html">Explore →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <footer>
-    <p>© 2025 NRI Global Guide</p>
+    © 2025 GlobalNRI | Simplifying Life Abroad
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>

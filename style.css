@@ -1,179 +1,194 @@
-/* =========================
-   GLOBAL RESET & BASE
-========================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
-    line-height: 1.6;
+    background: #F3F5F7;
+    color: #2E2E2E;
+    line-height: 1.7;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* ================= HEADER & MENU ================= */
 header {
-    background: linear-gradient(135deg, #1d2671, #c33764);
-    color: #ffffff;
-    padding: 40px 20px;
+    background: #0B3C5D;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.menu a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 15px;
+}
+
+.menu a:hover {
+    color: #FFFFFF;
+    border-bottom: 2px solid #1D70B8;
+    padding-bottom: 4px;
+}
+
+/* ================= HERO ================= */
+.hero {
+    background: #0B3C5D;
+    color: #FFFFFF;
+    padding: 70px 20px;
     text-align: center;
 }
 
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+.hero h1 {
+    font-size: 38px;
+    font-weight: 600;
 }
 
-header p {
+.hero p {
+    max-width: 750px;
+    margin: 12px auto 0;
     font-size: 16px;
-    opacity: 0.9;
+    color: #D1D5DB;
 }
 
-/* =========================
-   NAVIGATION
-========================= */
-nav {
-    background-color: #222;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 14px 20px;
-    font-size: 15px;
-    transition: background 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #c33764;
-}
-
-/* =========================
-   SECTIONS
-========================= */
-.section {
-    max-width: 1100px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
-.section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #1d2671;
-}
-
-.light {
-    background-color: #ffffff;
-}
-
-/* =========================
-   DROPDOWN
-========================= */
-select {
-    width: 100%;
-    max-width: 350px;
-    padding: 12px;
-    font-size: 16px;
-    margin-bottom: 30px;
+/* ================= CONTENT AREA ================= */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #FFFFFF;
     border-radius: 6px;
-    border: 1px solid #ccc;
 }
 
-/* =========================
-   CARDS
-========================= */
-.cards {
+/* Section Titles */
+.section-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #0B3C5D;
+}
+
+/* ================= GRID ================= */
+.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
 }
 
+/* ================= CARDS ================= */
 .card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease;
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-.card h3 {
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 18px;
     margin-bottom: 10px;
-    color: #c33764;
-    font-size: 20px;
+    color: #0B3C5D;
 }
 
-.card p {
+.card-content p {
     font-size: 14px;
-    color: #555;
+    color: #6B7280;
 }
 
-/* =========================
-   LISTS
-========================= */
-ul {
-    padding-left: 20px;
+.card-content a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #1D70B8;
+    font-weight: 500;
+    text-decoration: none;
 }
 
-li {
-    margin-bottom: 10px;
+.card-content a:hover {
+    text-decoration: underline;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* ================= POST PAGE ================= */
+.post img {
+    width: 100%;
+    margin: 25px 0;
+    border-radius: 6px;
+}
+
+.post p {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* ================= FOOTER ================= */
 footer {
-    background-color: #222;
-    color: #ffffff;
+    background: #0B3C5D;
+    color: #D1D5DB;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+    margin-top: 60px;
     font-size: 14px;
 }
 
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
-@media (max-width: 600px) {
-
-    header h1 {
-        font-size: 24px;
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
     }
 
-    header p {
-        font-size: 14px;
-    }
-
-    nav a {
-        padding: 10px 12px;
-        font-size: 13px;
-    }
-
-    .section h2 {
-        font-size: 22px;
-    }
-
-    .card {
-        padding: 15px;
+    .container {
+        padding: 25px;
+        margin: 25px;
     }
 }
 
-/* =========================
-   TABLET RESPONSIVE
-========================= */
-@media (max-width: 900px) {
-    header {
-        padding: 30px 15px;
-    }
+/* ================= HERO CONTENT BOX ================= */
+.hero-box {
+    max-width: 1200px;
+    margin: 40px auto 20px;
+    padding: 50px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    border-left: 6px solid #1D70B8;
 }
+
+.hero-box h1 {
+    font-size: 36px;
+    color: #0B3C5D;
+    margin-bottom: 12px;
+}
+
+.hero-box p {
+    font-size: 16px;
+    color: #6B7280;
+    max-width: 750px;
+}
+
