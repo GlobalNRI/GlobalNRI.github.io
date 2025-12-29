@@ -25,10 +25,46 @@ let linksData = null;  // Global so it's accessible for debugging
       if(!res || !res.ok) throw new Error('Failed to load links.json from any path');
       linksData = await res.json();
       window.linksData = linksData; // Expose globally for debugging
+      // Build a map from page titles to page keys for breadcrumb linking
+      window.crumbToPage = {};
+      Object.keys(linksData.pages || {}).forEach(key => {
+        const p = linksData.pages[key];
+        if(p && p.title) window.crumbToPage[p.title] = key;
+      });
+      // Ensure Home and top-level fallbacks exist
+      if(!window.crumbToPage.Home) {
+        if(linksData.pages['index.html']) window.crumbToPage.Home = 'index.html';
+        else if(linksData.titles && linksData.titles.Home) window.crumbToPage.Home = linksData.titles.Home;
+      }
+
       console.log('nav-helper: links.json loaded, found', Object.keys(linksData.pages).length, 'pages');
     }catch(e){
       console.error('nav-helper: Could not load links data:', e.message);
     }
+  }
+
+  function computeRelativeHref(fromPath, toPath){
+    // fromPath and toPath are workspace-relative paths like 'countries/netherlands/salary.html'
+    if(!fromPath) return toPath || '';
+    if(!toPath) return '#';
+
+    // Normalize
+    const fromParts = fromPath.split('/');
+    fromParts.pop(); // remove file
+    const toParts = toPath.split('/');
+
+    // If target is absolute-like (starts with /) return as-is
+    if(toPath.startsWith('/')) return toPath.substring(1);
+
+    // Find common prefix
+    let i = 0;
+    while(i < fromParts.length && i < toParts.length && fromParts[i] === toParts[i]) i++;
+
+    const up = fromParts.length - i;
+    const rel = [];
+    for(let j=0;j<up;j++) rel.push('..');
+    rel.push(...toParts.slice(i));
+    return rel.join('/') || './';
   }
 
   function getPagePath(){
@@ -98,12 +134,19 @@ let linksData = null;  // Global so it's accessible for debugging
         // Last crumb is current page - no link
         html += '<span>' + crumb + '</span>';
       } else {
-        // For parent crumbs, just display as text or link to home
-        if(crumb === 'Home'){
-          html += '<a href="' + getHomeUrl() + '">Home</a>';
-        } else {
-          html += '<span>' + crumb + '</span>';
+        // Try to resolve a page key for this crumb
+        let targetKey = (window.crumbToPage && window.crumbToPage[crumb]) || null;
+        let href = '#';
+        if(targetKey){
+          href = computeRelativeHref(pagePath, targetKey);
+        } else if(linksData.titles && linksData.titles[crumb]){
+          // titles may contain relative hrefs already
+          href = linksData.titles[crumb];
+        } else if(crumb === 'Home'){
+          href = computeRelativeHref(pagePath, window.crumbToPage && window.crumbToPage.Home ? window.crumbToPage.Home : 'index.html');
         }
+
+        html += '<a href="' + href + '">' + crumb + '</a>';
       }
     });
     
