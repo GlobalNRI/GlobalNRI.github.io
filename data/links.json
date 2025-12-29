@@ -67,6 +67,12 @@
       "title": "Health Insurance",
       "related": ["countries/netherlands/salary.html", "countries/netherlands/paperwork-timeline.html", "countries/netherlands/visa.html"]
     }
+    ,
+    "countries/netherlands/saving-money.html": {
+      "breadcrumb": ["Home", "Countries", "Netherlands", "Save Money"],
+      "title": "Save Money",
+      "related": ["countries/netherlands/cost-of-living.html", "countries/netherlands/health-insurance.html", "countries/netherlands/salary.html"]
+    }
   },
   "titles": {
     "Home": "../../index.html",
@@ -84,5 +90,7 @@
     "Invite Parents": "parents-invitation.html"
     ,
     "Health Insurance": "health-insurance.html"
+    ,
+    "Save Money": "saving-money.html"
   }
 }
