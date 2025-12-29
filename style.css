@@ -207,4 +207,19 @@ footer {
     color: #1D70B8; /* subtle hover effect */
 }
 
+/* Responsive navbar toggle and small-screen layout */
+.menu-toggle{display:none;background:transparent;border:0;font-size:1.6rem;color:#fff}
+@media (max-width:768px){
+    .navbar{display:flex;align-items:center;justify-content:space-between}
+    .menu{display:none;flex-direction:column;gap:8px;width:100%;margin-top:8px}
+    .menu.open{display:flex}
+    .menu-toggle{display:inline-block}
+    .menu a{padding:8px 12px;display:block}
+    .hero-box{padding:20px}
+}
+.hero-actions{margin-top:12px;display:flex;gap:8px}
+#siteSearch{padding:8px;border-radius:6px;border:1px solid #ddd;width:100%;max-width:420px}
+#clearSearch{padding:8px 10px;border-radius:6px}
+.quick-links{margin-top:16px}
+
 

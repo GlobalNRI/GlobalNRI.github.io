@@ -1,126 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KTM9MMNVVM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KTM9MMNVVM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KTM9MMNVVM');
-</script>
+        gtag('config', 'G-KTM9MMNVVM');
+    </script>
 
     <meta charset="UTF-8">
     <title>GlobalNRI | Visa, Jobs, Cost of Living & Life Abroad</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Trusted visa, job, finance and cost of living information for NRIs and immigrants.">
+    <meta name="description"
+        content="Trusted visa, job, finance and cost of living information for NRIs and immigrants.">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <script src="js/include-loader.js"></script>
+    <div data-include="includes/navbar.html"></div>
 
-<!-- ================= HEADER ================= -->
-<header>
-    <div class="navbar">
-        <div class="logo">
-            <a href="index.html">GlobalNRI</a>
+    <!-- ================= HERO CONTENT ================= -->
+    <section class="hero-box">
+        <h1>Your Global Life Starts Here</h1>
+        <p>
+            Trusted information on visas, jobs, finance, cost of living,
+            and life abroad for NRIs and aspiring immigrants.
+        </p>
+        <div class="hero-actions">
+            <input id="siteSearch" type="search" placeholder="Search guides, countries, topics..."
+                aria-label="Search site">
+            <button id="clearSearch">Clear</button>
         </div>
-        <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="countries.html">Countries</a>
-            <a href="blog.html">Guides</a>
-            <a href="faq.html">FAQ</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
-</header>
+    </section>
 
-<!-- ================= HERO CONTENT ================= -->
-<section class="hero-box">
-    <h1>Your Global Life Starts Here</h1>
-    <p>
-        Trusted information on visas, jobs, finance, cost of living,
-        and life abroad for NRIs and aspiring immigrants.
-    </p>
-</section>
 
-<!-- ================= POPULAR TOPICS ================= -->
-<section class="container">
-    <h2 class="section-title">Popular Topics</h2>
 
-    <div class="grid">
-        <div class="card">
-            <div class="card-content">
-                <h3>Work Visas</h3>
-                <p>Eligibility, documents & processing time.</p>
-                <a href="blog.html">Explore →</a>
+    <!-- ================= COUNTRY ENTRY POINT ================= -->
+    <section class="container">
+        <h2 class="section-title">Choose Your Destination</h2>
+
+        <div class="grid">
+            <div class="card">
+                <img src="imgs/Netherlands.png">
+                <div class="card-content">
+                    <h3>Netherlands</h3>
+                    <p>Visa options, cost of living and housing guidance for NRIs and expats.</p>
+                    <a href="countries/netherlands/index.html">Explore →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imgs/germany.jpg">
+                <div class="card-content">
+                    <h3>Germany</h3>
+                    <p>Work visas, jobs and living costs across major German cities.</p>
+                    <a href="countries/germany/index.html">Explore →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imgs/canada.jpg">
+                <div class="card-content">
+                    <h3>Canada</h3>
+                    <p>Immigration pathways, salaries and regional cost comparisons.</p>
+                    <a href="countries/canada/index.html">Explore →</a>
+                </div>
             </div>
         </div>
 
-        <div class="card">
-            <div class="card-content">
-                <h3>Cost of Living</h3>
-                <p>Rent, groceries & monthly expenses.</p>
-                <a href="blog.html">Explore →</a>
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="countries/netherlands/house-buying.html">House Buying — Netherlands</a></li>
+                <li><a href="countries/netherlands/second-house-buying.html">Buying a Second House — Netherlands</a>
+                </li>
+                <li><a href="blog.html">Guides & Articles</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ================= POPULAR TOPICS ================= -->
+    <section class="container">
+        <h2 class="section-title">Popular Topics</h2>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Work Visas</h3>
+                    <p>Eligibility, documents & processing time.</p>
+                    <a href="blog.html">Explore →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>Cost of Living</h3>
+                    <p>Rent, groceries & monthly expenses.</p>
+                    <a href="blog.html">Explore →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>Jobs Abroad</h3>
+                    <p>Job portals, salaries & demand.</p>
+                    <a href="blog.html">Explore →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>NRI Tax & Finance</h3>
+                    <p>Taxation, banking & remittance.</p>
+                    <a href="blog.html">Explore →</a>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="card">
-            <div class="card-content">
-                <h3>Jobs Abroad</h3>
-                <p>Job portals, salaries & demand.</p>
-                <a href="blog.html">Explore →</a>
+    <!-- ================= LATEST GUIDES ================= -->
+    <section class="container">
+        <h2 class="section-title">Latest Guides</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-content">
+                    <h3>House Buying — Netherlands</h3>
+                    <p>A step-by-step guide to buying your primary home in the Netherlands: finding properties,
+                        financing and closing the sale.</p>
+                    <a href="countries/netherlands/house-buying.html">Read guide →</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Buying a Second House — Netherlands</h3>
+                    <p>Practical advice for buying a holiday or investment property, including taxes, VvE checks and
+                        short-term rental rules.</p>
+                    <a href="countries/netherlands/second-house-buying.html">Read guide →</a>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="card">
-            <div class="card-content">
-                <h3>NRI Tax & Finance</h3>
-                <p>Taxation, banking & remittance.</p>
-                <a href="blog.html">Explore →</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ================= COUNTRY ENTRY POINT ================= -->
-<section class="container">
-    <h2 class="section-title">Choose Your Destination</h2>
-
-    <div class="grid">
-        <div class="card">
-            <img src="imgs/Netherlands.png">
-            <div class="card-content">
-                <h3>Netherlands</h3>
-                <a href="countries/netherlands/index.html">Explore →</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="imgs/germany.jpg">
-            <div class="card-content">
-                <h3>Germany</h3>
-                <a href="countries/germany/index.html">Explore →</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="imgs/canada.jpg">
-            <div class="card-content">
-                <h3>Canada</h3>
-                <a href="countries/canada/index.html">Explore →</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer>
-    © 2025 GlobalNRI | Simplifying Life Abroad
-</footer>
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        © 2025 GlobalNRI | Simplifying Life Abroad
+    </footer>
 
 </body>
+
 </html>
