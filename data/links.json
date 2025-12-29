@@ -61,6 +61,11 @@
       "breadcrumb": ["Home", "Countries", "Netherlands", "Invite Parents"],
       "title": "Invite Parents",
       "related": ["countries/netherlands/visa.html", "countries/netherlands/paperwork-timeline.html", "countries/netherlands/cost-of-living.html"]
+    },
+    "countries/netherlands/health-insurance.html": {
+      "breadcrumb": ["Home", "Countries", "Netherlands", "Health Insurance"],
+      "title": "Health Insurance",
+      "related": ["countries/netherlands/salary.html", "countries/netherlands/paperwork-timeline.html", "countries/netherlands/visa.html"]
     }
   },
   "titles": {
@@ -77,5 +82,7 @@
     "Paperwork & Timeline": "paperwork-timeline.html"
     ,
     "Invite Parents": "parents-invitation.html"
+    ,
+    "Health Insurance": "health-insurance.html"
   }
 }
