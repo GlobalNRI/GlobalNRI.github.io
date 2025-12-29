@@ -1,3 +1,7 @@
+/* style.css
+    Purpose: Global stylesheet for GlobalNRI simple static site.
+    Keep selectors concise and mobile-first. Add section headers for
+    main layout blocks for easy navigation. */
 * {
     margin: 0;
     padding: 0;

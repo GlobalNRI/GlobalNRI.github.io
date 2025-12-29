@@ -1,5 +1,7 @@
 // include-loader.js
-// Finds elements with `data-include` and fetches the fragment into the element.
+// Purpose: Load HTML fragments declared with `data-include` into pages.
+// - Handles file:// detection and warns about starting a local server.
+// - Initializes navbar toggle and simple site search filter after includes load.
 (function(){
   // If page is opened via file://, browsers block fetch/XHR for local files.
   // Detect and show a helpful message instead of repeatedly trying to fetch.

@@ -1,6 +1,10 @@
 // nav-helper.js
-// Dynamically generates breadcrumbs and related links based on data/links.json
-// Call setupNav() after page loads to initialize
+// Purpose: Render breadcrumb and related-links UI from a centralized JSON
+// Data: `data/links.json` — contains `pages` mapping and `titles` shortcuts.
+// Behavior:
+// - Loads links.json (tries several relative paths for local/served environments)
+// - Exposes `window.linksData` and `window.crumbToPage` for debugging
+// - Provides `setupNav()` to render breadcrumbs and related links on the page
 
 let linksData = null;  // Global so it's accessible for debugging
 

@@ -1,3 +1,6 @@
+// script.js
+// Purpose: Simple client-side data store and renderer for country cards used
+// by the country selector UI. Add/extend `countryInfo` for more entries.
 const countryInfo = {
     usa: {
         name: "United States",
