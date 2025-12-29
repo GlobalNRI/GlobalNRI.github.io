@@ -222,4 +222,43 @@ footer {
 #clearSearch{padding:8px 10px;border-radius:6px}
 .quick-links{margin-top:16px}
 
+/* Breadcrumb navigation */
+.breadcrumb{background:#f9fafb;padding:12px 20px;font-size:13px;margin-bottom:20px;border-radius:4px}
+.breadcrumb a{color:#1D70B8;text-decoration:none;margin:0 4px}
+.breadcrumb a:hover{text-decoration:underline}
+.breadcrumb span{color:#6B7280;margin:0 4px}
+
+/* Sidebar navigation */
+.page-layout{display:grid;grid-template-columns:1fr 280px;gap:30px;align-items:start}
+.sidebar{background:#f9fafb;padding:20px;border-radius:6px;border-left:3px solid #1D70B8}
+.sidebar h3{font-size:16px;margin-bottom:12px;color:#0B3C5D}
+.sidebar ul{list-style:none;padding:0}
+.sidebar li{margin-bottom:8px}
+.sidebar a{color:#1D70B8;text-decoration:none;font-size:14px;display:block;padding:6px}
+.sidebar a:hover{background:#E5E7EB;border-radius:3px}
+
+/* Table of contents */
+.toc{background:#f9fafb;padding:16px;border-radius:6px;margin:20px 0;border-left:3px solid #1D70B8}
+.toc h4{font-size:14px;margin-bottom:10px;color:#0B3C5D}
+.toc ol{padding-left:20px;font-size:13px}
+.toc li{margin-bottom:6px}
+.toc a{color:#1D70B8;text-decoration:none}
+.toc a:hover{text-decoration:underline}
+
+/* Back link */
+.back-link{display:inline-block;margin-bottom:16px;color:#1D70B8;font-size:14px;text-decoration:none}
+.back-link:hover{text-decoration:underline}
+
+/* Related links section */
+.related-section{background:#f9fafb;padding:20px;border-radius:6px;margin-top:30px;border-top:2px solid #E5E7EB}
+.related-section h3{font-size:18px;margin-bottom:12px;color:#0B3C5D}
+.related-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.related-links a{background:#FFFFFF;padding:12px;border-radius:4px;border:1px solid #E5E7EB;text-decoration:none;color:#1D70B8;font-size:14px;transition:all 0.2s}
+.related-links a:hover{background:#E5E7EB;border-color:#1D70B8}
+
+@media (max-width:768px){
+    .page-layout{grid-template-columns:1fr;gap:20px}
+    .sidebar{margin-top:20px}
+}
+
 
