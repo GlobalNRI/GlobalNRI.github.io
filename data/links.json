@@ -232,6 +232,68 @@
                 "countries/netherlands/house-buying.html"
             ]
         }
+        ,
+        "countries/germany/index.html": {
+            "breadcrumb": ["Home","Countries","Germany"],
+            "title": "Germany",
+            "related": [
+                "countries/germany/visa.html",
+                "countries/germany/jobs.html",
+                "countries/germany/cost-of-living.html",
+                "countries/germany/health-insurance.html",
+                "countries/germany/house-buying.html",
+                "countries/germany/parents-guide.html"
+            ]
+        },
+        "countries/germany/visa.html": {
+            "breadcrumb": ["Home","Countries","Germany","Visa & Immigration"],
+            "title": "Visa & Immigration",
+            "related": [
+                "countries/germany/jobs.html",
+                "countries/germany/cost-of-living.html",
+                "countries/germany/health-insurance.html"
+            ]
+        },
+        "countries/germany/jobs.html": {
+            "breadcrumb": ["Home","Countries","Germany","Jobs & Careers"],
+            "title": "Jobs & Careers",
+            "related": [
+                "countries/germany/visa.html",
+                "countries/germany/cost-of-living.html"
+            ]
+        },
+        "countries/germany/cost-of-living.html": {
+            "breadcrumb": ["Home","Countries","Germany","Cost of Living"],
+            "title": "Cost of Living",
+            "related": [
+                "countries/germany/jobs.html",
+                "countries/germany/house-buying.html"
+            ]
+        },
+        "countries/germany/health-insurance.html": {
+            "breadcrumb": ["Home","Countries","Germany","Health Insurance"],
+            "title": "Health Insurance",
+            "related": [
+                "countries/germany/visa.html",
+                "countries/germany/jobs.html"
+            ]
+        },
+        "countries/germany/house-buying.html": {
+            "breadcrumb": ["Home","Countries","Germany","Housing & Buying"],
+            "title": "Housing & Buying",
+            "related": [
+                "countries/germany/cost-of-living.html",
+                "countries/germany/health-insurance.html"
+            ]
+        },
+        "countries/germany/parents-guide.html": {
+            "breadcrumb": ["Home","Countries","Germany","Parenting & Childcare"],
+            "title": "Parenting & Childcare",
+            "related": [
+                "countries/germany/health-insurance.html",
+                "countries/germany/cost-of-living.html"
+            ]
+        }
     },
     "titles": {
         "Home": "../../index.html",
@@ -251,6 +313,9 @@
         "5-Year Expat Map": "expat-5-year-map.html"
         ,
         "Banking & Tax": "finance.html",
-        "Parenting & Childcare": "parents-guide.html"
+        "Parenting & Childcare": "parents-guide.html",
+        "Germany": "index.html",
+        "Jobs & Careers": "jobs.html",
+        "Housing & Buying": "house-buying.html"
     }
 }

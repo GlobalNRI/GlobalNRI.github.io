@@ -180,7 +180,8 @@ let linksData = null;  // Global so it's accessible for debugging
         pageConfig.related.forEach(relPath => {
             const relConfig = linksData.pages[relPath];
             if (relConfig) {
-                html += '<a href="' + relPath + '" class="related-link">' + relConfig.title + '</a>';
+                const href = computeRelativeHref(pagePath, relPath);
+                html += '<a href="' + href + '" class="related-link">' + relConfig.title + '</a>';
             }
         });
         relatedContainer.innerHTML = html;
