@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffd89b"/>
+      <stop offset="1" stop-color="#19547b"/>
+    </linearGradient>
+    <style>
+      .bg{fill:url(#g)}
+      .text{font-family:Segoe UI, Roboto, Arial, sans-serif; fill:#fff}
+      .title{font-size:48px; font-weight:700}
+      .subtitle{font-size:28px}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="800" rx="20"/>
+  <g transform="translate(80,160)">
+    <circle cx="120" cy="120" r="100" fill="#fff" opacity="0.12"/>
+    <rect x="260" y="40" width="520" height="220" rx="18" fill="#ffffff" opacity="0.12"/>
+  </g>
+  <g transform="translate(80,420)">
+    <text class="text title" x="0" y="0">Parenting & Childcare</text>
+    <text class="text subtitle" x="0" y="56">Pregnancy • Birth • Childcare • Schools</text>
+  </g>
+</svg>
