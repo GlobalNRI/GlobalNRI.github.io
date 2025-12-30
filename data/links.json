@@ -1,112 +1,237 @@
 {
-  "pages": {
-    "index.html": {
-      "breadcrumb": ["Home"],
-      "title": "GlobalNRI"
+    "pages": {
+        "index.html": {
+            "breadcrumb": [
+                "Home"
+            ],
+            "title": "GlobalNRI"
+        },
+        "countries.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries"
+            ],
+            "title": "Countries"
+        },
+        "blog.html": {
+            "breadcrumb": [
+                "Home",
+                "Guides"
+            ],
+            "title": "Guides"
+        },
+        "faq.html": {
+            "breadcrumb": [
+                "Home",
+                "FAQ"
+            ],
+            "title": "FAQ"
+        },
+        "countries/netherlands/index.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands"
+            ],
+            "title": "Netherlands",
+            "related": [
+                "countries/netherlands/house-buying.html",
+                "countries/netherlands/visa.html",
+                "countries/netherlands/salary.html",
+                "countries/netherlands/cost-of-living.html"
+            ]
+        },
+        "countries/netherlands/house-buying.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "House Buying"
+            ],
+            "title": "House Buying",
+            "related": [
+                "countries/netherlands/second-house-buying.html",
+                "countries/netherlands/cost-of-living.html",
+                "countries/netherlands/salary.html",
+                "countries/netherlands/visa.html"
+            ]
+        },
+        "countries/netherlands/second-house-buying.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "Buying a Second House"
+            ],
+            "title": "Buying a Second House",
+            "related": [
+                "countries/netherlands/house-buying.html",
+                "countries/netherlands/cost-of-living.html",
+                "countries/netherlands/salary.html",
+                "countries/netherlands/visa.html"
+            ]
+        },
+        "countries/netherlands/dutch-citizenship.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "Dutch Citizenship"
+            ],
+            "title": "Dutch Citizenship",
+            "related": [
+                "countries/netherlands/visa.html",
+                "countries/netherlands/house-buying.html",
+                "countries/netherlands/salary.html",
+                "countries/netherlands/cost-of-living.html"
+            ]
+        },
+        "countries/netherlands/visa.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "Visa & Immigration"
+            ],
+            "title": "Visa & Immigration",
+            "related": [
+                "countries/netherlands/salary.html",
+                "countries/netherlands/cost-of-living.html",
+                "countries/netherlands/house-buying.html",
+                "countries/netherlands/dutch-citizenship.html"
+            ]
+        },
+        "countries/netherlands/salary.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "Salary & Taxes"
+            ],
+            "title": "Salary & Taxes",
+            "related": [
+                "countries/netherlands/visa.html",
+                "countries/netherlands/cost-of-living.html",
+                "countries/netherlands/house-buying.html",
+                "countries/netherlands/dutch-citizenship.html"
+            ]
+        },
+        "countries/netherlands/cost-of-living.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "Cost of Living"
+            ],
+            "title": "Cost of Living",
+            "related": [
+                "countries/netherlands/salary.html",
+                "countries/netherlands/house-buying.html",
+                "countries/netherlands/visa.html",
+                "countries/netherlands/second-house-buying.html"
+            ]
+        },
+        "countries/netherlands/paperwork-timeline.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "Paperwork & Timeline"
+            ],
+            "title": "Paperwork & Timeline",
+            "related": [
+                "countries/netherlands/visa.html",
+                "countries/netherlands/house-buying.html",
+                "countries/netherlands/salary.html"
+            ]
+        },
+        "countries/netherlands/parents-invitation.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "Invite Parents"
+            ],
+            "title": "Invite Parents",
+            "related": [
+                "countries/netherlands/visa.html",
+                "countries/netherlands/paperwork-timeline.html",
+                "countries/netherlands/cost-of-living.html"
+            ]
+        },
+        "countries/netherlands/health-insurance.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "Health Insurance"
+            ],
+            "title": "Health Insurance",
+            "related": [
+                "countries/netherlands/salary.html",
+                "countries/netherlands/paperwork-timeline.html",
+                "countries/netherlands/visa.html"
+            ]
+        },
+        "countries/netherlands/saving-money.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "Save Money"
+            ],
+            "title": "Save Money",
+            "related": [
+                "countries/netherlands/cost-of-living.html",
+                "countries/netherlands/health-insurance.html",
+                "countries/netherlands/salary.html"
+            ]
+        },
+        "countries/netherlands/public-transport.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "Public Transport"
+            ],
+            "title": "Public Transport",
+            "related": [
+                "countries/netherlands/cost-of-living.html",
+                "countries/netherlands/saving-money.html",
+                "countries/netherlands/salary.html"
+            ]
+        },
+        "countries/netherlands/expat-5-year-map.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "5-Year Expat Map"
+            ],
+            "title": "5-Year Expat Map",
+            "related": [
+                "countries/netherlands/visa.html",
+                "countries/netherlands/paperwork-timeline.html",
+                "countries/netherlands/salary.html",
+                "countries/netherlands/house-buying.html"
+            ]
+        }
     },
-    "countries.html": {
-      "breadcrumb": ["Home", "Countries"],
-      "title": "Countries"
-    },
-    "blog.html": {
-      "breadcrumb": ["Home", "Guides"],
-      "title": "Guides"
-    },
-    "faq.html": {
-      "breadcrumb": ["Home", "FAQ"],
-      "title": "FAQ"
-    },
-    "countries/netherlands/index.html": {
-      "breadcrumb": ["Home", "Countries", "Netherlands"],
-      "title": "Netherlands",
-      "related": ["countries/netherlands/house-buying.html", "countries/netherlands/visa.html", "countries/netherlands/salary.html", "countries/netherlands/cost-of-living.html"]
-    },
-    "countries/netherlands/house-buying.html": {
-      "breadcrumb": ["Home", "Countries", "Netherlands", "House Buying"],
-      "title": "House Buying",
-      "related": ["countries/netherlands/second-house-buying.html", "countries/netherlands/cost-of-living.html", "countries/netherlands/salary.html", "countries/netherlands/visa.html"]
-    },
-    "countries/netherlands/second-house-buying.html": {
-      "breadcrumb": ["Home", "Countries", "Netherlands", "Buying a Second House"],
-      "title": "Buying a Second House",
-      "related": ["countries/netherlands/house-buying.html", "countries/netherlands/cost-of-living.html", "countries/netherlands/salary.html", "countries/netherlands/visa.html"]
-    },
-    "countries/netherlands/dutch-citizenship.html": {
-      "breadcrumb": ["Home", "Countries", "Netherlands", "Dutch Citizenship"],
-      "title": "Dutch Citizenship",
-      "related": ["countries/netherlands/visa.html", "countries/netherlands/house-buying.html", "countries/netherlands/salary.html", "countries/netherlands/cost-of-living.html"]
-    },
-    "countries/netherlands/visa.html": {
-      "breadcrumb": ["Home", "Countries", "Netherlands", "Visa & Immigration"],
-      "title": "Visa & Immigration",
-      "related": ["countries/netherlands/salary.html", "countries/netherlands/cost-of-living.html", "countries/netherlands/house-buying.html", "countries/netherlands/dutch-citizenship.html"]
-    },
-    "countries/netherlands/salary.html": {
-      "breadcrumb": ["Home", "Countries", "Netherlands", "Salary & Taxes"],
-      "title": "Salary & Taxes",
-      "related": ["countries/netherlands/visa.html", "countries/netherlands/cost-of-living.html", "countries/netherlands/house-buying.html", "countries/netherlands/dutch-citizenship.html"]
-    },
-    "countries/netherlands/cost-of-living.html": {
-      "breadcrumb": ["Home", "Countries", "Netherlands", "Cost of Living"],
-      "title": "Cost of Living",
-      "related": ["countries/netherlands/salary.html", "countries/netherlands/house-buying.html", "countries/netherlands/visa.html", "countries/netherlands/second-house-buying.html"]
+    "titles": {
+        "Home": "../../index.html",
+        "Countries": "../../countries.html",
+        "Netherlands": "index.html",
+        "House Buying": "house-buying.html",
+        "Buying a Second House": "second-house-buying.html",
+        "Dutch Citizenship": "dutch-citizenship.html",
+        "Visa & Immigration": "visa.html",
+        "Salary & Taxes": "salary.html",
+        "Cost of Living": "cost-of-living.html",
+        "Paperwork & Timeline": "paperwork-timeline.html",
+        "Invite Parents": "parents-invitation.html",
+        "Health Insurance": "health-insurance.html",
+        "Save Money": "saving-money.html",
+        "Public Transport": "public-transport.html",
+        "5-Year Expat Map": "expat-5-year-map.html"
     }
-    ,
-    "countries/netherlands/paperwork-timeline.html": {
-      "breadcrumb": ["Home", "Countries", "Netherlands", "Paperwork & Timeline"],
-      "title": "Paperwork & Timeline",
-      "related": ["countries/netherlands/visa.html", "countries/netherlands/house-buying.html", "countries/netherlands/salary.html"]
-    },
-    "countries/netherlands/parents-invitation.html": {
-      "breadcrumb": ["Home", "Countries", "Netherlands", "Invite Parents"],
-      "title": "Invite Parents",
-      "related": ["countries/netherlands/visa.html", "countries/netherlands/paperwork-timeline.html", "countries/netherlands/cost-of-living.html"]
-    },
-    "countries/netherlands/health-insurance.html": {
-      "breadcrumb": ["Home", "Countries", "Netherlands", "Health Insurance"],
-      "title": "Health Insurance",
-      "related": ["countries/netherlands/salary.html", "countries/netherlands/paperwork-timeline.html", "countries/netherlands/visa.html"]
-    }
-    ,
-    "countries/netherlands/saving-money.html": {
-      "breadcrumb": ["Home", "Countries", "Netherlands", "Save Money"],
-      "title": "Save Money",
-      "related": ["countries/netherlands/cost-of-living.html", "countries/netherlands/health-insurance.html", "countries/netherlands/salary.html"]
-    }
-    ,
-    "countries/netherlands/public-transport.html": {
-      "breadcrumb": ["Home", "Countries", "Netherlands", "Public Transport"],
-      "title": "Public Transport",
-      "related": ["countries/netherlands/cost-of-living.html", "countries/netherlands/saving-money.html", "countries/netherlands/salary.html"]
-    }
-    ,
-    "countries/netherlands/expat-5-year-map.html": {
-      "breadcrumb": ["Home", "Countries", "Netherlands", "5-Year Expat Map"],
-      "title": "5-Year Expat Map",
-      "related": ["countries/netherlands/visa.html", "countries/netherlands/paperwork-timeline.html", "countries/netherlands/salary.html", "countries/netherlands/house-buying.html"]
-    }
-  },
-  "titles": {
-    "Home": "../../index.html",
-    "Countries": "../../countries.html",
-    "Netherlands": "index.html",
-    "House Buying": "house-buying.html",
-    "Buying a Second House": "second-house-buying.html",
-    "Dutch Citizenship": "dutch-citizenship.html",
-    "Visa & Immigration": "visa.html",
-    "Salary & Taxes": "salary.html",
-    "Cost of Living": "cost-of-living.html"
-    ,
-    "Paperwork & Timeline": "paperwork-timeline.html"
-    ,
-    "Invite Parents": "parents-invitation.html"
-    ,
-    "Health Insurance": "health-insurance.html"
-    ,
-    "Save Money": "saving-money.html"
-    ,
-    "Public Transport": "public-transport.html"
-    ,
-    "5-Year Expat Map": "expat-5-year-map.html"
-  }
 }

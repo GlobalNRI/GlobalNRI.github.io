@@ -1,123 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Breadcrumb Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <style>
-        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; }
-        .test-section { background: #f5f5f5; padding: 15px; margin: 10px 0; border-radius: 5px; }
-        .console { background: #000; color: #0f0; padding: 10px; max-height: 300px; overflow-y: auto; font-family: monospace; font-size: 12px; }
-        .console-line { margin: 2px 0; }
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .test-section {
+            background: #f5f5f5;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .console {
+            background: #000;
+            color: #0f0;
+            padding: 10px;
+            max-height: 300px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 12px;
+        }
+
+        .console-line {
+            margin: 2px 0;
+        }
     </style>
 </head>
+
 <body>
 
-<h1>Breadcrumb Navigation Test</h1>
+    <h1>Breadcrumb Navigation Test</h1>
 
-<div class="test-section">
-    <h2>Current Page Info</h2>
-    <p><strong>URL:</strong> <span id="url"></span></p>
-    <p><strong>Pathname:</strong> <span id="pathname"></span></p>
-    <p><strong>Detected Page Path:</strong> <span id="detected-path"></span></p>
-</div>
+    <div class="test-section">
+        <h2>Current Page Info</h2>
+        <p><strong>URL:</strong> <span id="url"></span></p>
+        <p><strong>Pathname:</strong> <span id="pathname"></span></p>
+        <p><strong>Detected Page Path:</strong> <span id="detected-path"></span></p>
+    </div>
 
-<div class="test-section">
-    <h2>Breadcrumb Preview</h2>
-    <div class="breadcrumb" data-breadcrumb></div>
-</div>
+    <div class="test-section">
+        <h2>Breadcrumb Preview</h2>
+        <div class="breadcrumb" data-breadcrumb></div>
+    </div>
 
-<div class="test-section">
-    <h2>Related Links Preview</h2>
-    <div class="related-links" data-related-links></div>
-</div>
+    <div class="test-section">
+        <h2>Related Links Preview</h2>
+        <div class="related-links" data-related-links></div>
+    </div>
 
-<div class="test-section">
-    <h2>Data Status</h2>
-    <p><strong>Data Loaded:</strong> <span id="data-status">Loading...</span></p>
-    <p><strong>Pages Found:</strong> <span id="pages-count">-</span></p>
-</div>
+    <div class="test-section">
+        <h2>Data Status</h2>
+        <p><strong>Data Loaded:</strong> <span id="data-status">Loading...</span></p>
+        <p><strong>Pages Found:</strong> <span id="pages-count">-</span></p>
+    </div>
 
-<div class="test-section">
-    <h2>Debug Console</h2>
-    <div class="console" id="debug-console"></div>
-</div>
+    <div class="test-section">
+        <h2>Debug Console</h2>
+        <div class="console" id="debug-console"></div>
+    </div>
 
-<script>
-// Intercept console.log for debugging
-const originalLog = console.log;
-const originalWarn = console.warn;
-const originalError = console.error;
-const consoleDiv = document.getElementById('debug-console');
+    <script>
+        // Intercept console.log for debugging
+        const originalLog = console.log;
+        const originalWarn = console.warn;
+        const originalError = console.error;
+        const consoleDiv = document.getElementById('debug-console');
 
-function addConsoleOutput(msg, type = 'log') {
-    const line = document.createElement('div');
-    line.className = 'console-line';
-    line.style.color = type === 'error' ? '#f00' : type === 'warn' ? '#ff0' : '#0f0';
-    line.textContent = '[' + type.toUpperCase() + '] ' + msg;
-    consoleDiv.appendChild(line);
-    consoleDiv.scrollTop = consoleDiv.scrollHeight;
-}
+        function addConsoleOutput(msg, type = 'log') {
+            const line = document.createElement('div');
+            line.className = 'console-line';
+            line.style.color = type === 'error' ? '#f00' : type === 'warn' ? '#ff0' : '#0f0';
+            line.textContent = '[' + type.toUpperCase() + '] ' + msg;
+            consoleDiv.appendChild(line);
+            consoleDiv.scrollTop = consoleDiv.scrollHeight;
+        }
 
-console.log = function(...args) {
-    originalLog.apply(console, args);
-    addConsoleOutput(args.join(' '), 'log');
-};
+        console.log = function (...args) {
+            originalLog.apply(console, args);
+            addConsoleOutput(args.join(' '), 'log');
+        };
 
-console.warn = function(...args) {
-    originalWarn.apply(console, args);
-    addConsoleOutput(args.join(' '), 'warn');
-};
+        console.warn = function (...args) {
+            originalWarn.apply(console, args);
+            addConsoleOutput(args.join(' '), 'warn');
+        };
 
-console.error = function(...args) {
-    originalError.apply(console, args);
-    addConsoleOutput(args.join(' '), 'error');
-};
+        console.error = function (...args) {
+            originalError.apply(console, args);
+            addConsoleOutput(args.join(' '), 'error');
+        };
 
-// Display page info
-document.getElementById('url').textContent = window.location.href;
-document.getElementById('pathname').textContent = window.location.pathname;
+        // Display page info
+        document.getElementById('url').textContent = window.location.href;
+        document.getElementById('pathname').textContent = window.location.pathname;
 
-</script>
+    </script>
 
-<script src="js/nav-helper.js"></script>
+    <script src="js/nav-helper.js"></script>
 
-<script>
-// Manual path detection for testing
-function testGetPagePath(){
-  let path = window.location.pathname;
-  console.log('Initial pathname:', path);
-  
-  if(path.includes(':\\')) {
-    const match = path.match(/GlobalNRI[\\\/](.+?)$/i);
-    if(match) {
-      path = match[1].replace(/\\/g, '/');
-      console.log('Extracted from file path:', path);
-      return path;
-    }
-  }
-  
-  if(path.startsWith('/')) path = path.substring(1);
-  if(!path || path === '') path = 'index.html';
-  
-  console.log('Final path:', path);
-  return path;
-}
+    <script>
+        // Manual path detection for testing
+        function testGetPagePath() {
+            let path = window.location.pathname;
+            console.log('Initial pathname:', path);
 
-setTimeout(() => {
-  const detectedPath = testGetPagePath();
-  document.getElementById('detected-path').textContent = detectedPath;
-  
-  // Test data loading
-  if(window.linksData) {
-    document.getElementById('data-status').textContent = 'Loaded ✓';
-    document.getElementById('pages-count').textContent = Object.keys(window.linksData.pages).length;
-  } else {
-    document.getElementById('data-status').textContent = 'Not loaded ✗';
-  }
-}, 500);
-</script>
+            if (path.includes(':\\')) {
+                const match = path.match(/GlobalNRI[\\\/](.+?)$/i);
+                if (match) {
+                    path = match[1].replace(/\\/g, '/');
+                    console.log('Extracted from file path:', path);
+                    return path;
+                }
+            }
+
+            if (path.startsWith('/')) path = path.substring(1);
+            if (!path || path === '') path = 'index.html';
+
+            console.log('Final path:', path);
+            return path;
+        }
+
+        setTimeout(() => {
+            const detectedPath = testGetPagePath();
+            document.getElementById('detected-path').textContent = detectedPath;
+
+            // Test data loading
+            if (window.linksData) {
+                document.getElementById('data-status').textContent = 'Loaded ✓';
+                document.getElementById('pages-count').textContent = Object.keys(window.linksData.pages).length;
+            } else {
+                document.getElementById('data-status').textContent = 'Not loaded ✗';
+            }
+        }, 500);
+    </script>
 
 </body>
+
 </html>
