@@ -101,6 +101,20 @@
                 "countries/netherlands/dutch-citizenship.html"
             ]
         },
+        "countries/netherlands/finance.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "Banking & Tax"
+            ],
+            "title": "Banking & Tax",
+            "related": [
+                "countries/netherlands/salary.html",
+                "countries/netherlands/cost-of-living.html",
+                "countries/netherlands/visa.html"
+            ]
+        },
         "countries/netherlands/salary.html": {
             "breadcrumb": [
                 "Home",
@@ -233,5 +247,7 @@
         "Save Money": "saving-money.html",
         "Public Transport": "public-transport.html",
         "5-Year Expat Map": "expat-5-year-map.html"
+        ,
+        "Banking & Tax": "finance.html"
     }
 }
