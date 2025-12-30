@@ -73,6 +73,18 @@
       "title": "Save Money",
       "related": ["countries/netherlands/cost-of-living.html", "countries/netherlands/health-insurance.html", "countries/netherlands/salary.html"]
     }
+    ,
+    "countries/netherlands/public-transport.html": {
+      "breadcrumb": ["Home", "Countries", "Netherlands", "Public Transport"],
+      "title": "Public Transport",
+      "related": ["countries/netherlands/cost-of-living.html", "countries/netherlands/saving-money.html", "countries/netherlands/salary.html"]
+    }
+    ,
+    "countries/netherlands/expat-5-year-map.html": {
+      "breadcrumb": ["Home", "Countries", "Netherlands", "5-Year Expat Map"],
+      "title": "5-Year Expat Map",
+      "related": ["countries/netherlands/visa.html", "countries/netherlands/paperwork-timeline.html", "countries/netherlands/salary.html", "countries/netherlands/house-buying.html"]
+    }
   },
   "titles": {
     "Home": "../../index.html",
@@ -92,5 +104,9 @@
     "Health Insurance": "health-insurance.html"
     ,
     "Save Money": "saving-money.html"
+    ,
+    "Public Transport": "public-transport.html"
+    ,
+    "5-Year Expat Map": "expat-5-year-map.html"
   }
 }
