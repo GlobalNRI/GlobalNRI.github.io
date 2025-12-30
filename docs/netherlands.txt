@@ -9,3 +9,6 @@ trasport system in Netherlands.
 
 
 Create a page and update the necessary links to link the newly create page
+
+I'll (1) add a parents-guide.html page under netherlands and (2) update links.json to include the new page and title, plus add it to Netherlands related lists. 
+Proceeding to create files and update links.

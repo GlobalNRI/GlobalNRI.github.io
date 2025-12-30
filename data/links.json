@@ -38,7 +38,8 @@
                 "countries/netherlands/house-buying.html",
                 "countries/netherlands/visa.html",
                 "countries/netherlands/salary.html",
-                "countries/netherlands/cost-of-living.html"
+                "countries/netherlands/cost-of-living.html",
+                "countries/netherlands/parents-guide.html"
             ]
         },
         "countries/netherlands/house-buying.html": {
@@ -170,7 +171,8 @@
             "related": [
                 "countries/netherlands/visa.html",
                 "countries/netherlands/paperwork-timeline.html",
-                "countries/netherlands/cost-of-living.html"
+                "countries/netherlands/cost-of-living.html",
+                "countries/netherlands/parents-guide.html"
             ]
         },
         "countries/netherlands/health-insurance.html": {
@@ -248,6 +250,7 @@
         "Public Transport": "public-transport.html",
         "5-Year Expat Map": "expat-5-year-map.html"
         ,
-        "Banking & Tax": "finance.html"
+        "Banking & Tax": "finance.html",
+        "Parenting & Childcare": "parents-guide.html"
     }
 }
