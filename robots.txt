@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Disallow: /test-
+
+# Specific rules
+Allow: /countries/
+Allow: /blog.html
+Allow: /contact.html
+Allow: /faq.html
+
+# Slow crawlers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://globalnri.github.io/sitemap.xml
