@@ -273,6 +273,20 @@
                 "countries/netherlands/cost-of-living.html"
             ]
         },
+        "countries/netherlands/send-money-to-india.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "Send Money to India"
+            ],
+            "title": "Send Money to India",
+            "related": [
+                "countries/netherlands/finance.html",
+                "countries/netherlands/cost-of-living.html",
+                "countries/netherlands/salary.html"
+            ]
+        },
         "countries/germany/index.html": {
             "breadcrumb": [
                 "Home",
