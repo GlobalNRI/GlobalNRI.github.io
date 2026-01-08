@@ -39,7 +39,8 @@
                 "countries/netherlands/visa.html",
                 "countries/netherlands/salary.html",
                 "countries/netherlands/cost-of-living.html",
-                "countries/netherlands/parents-guide.html"
+                "countries/netherlands/parents-guide.html",
+                "countries/netherlands/almere.html"
             ]
         },
         "countries/netherlands/house-buying.html": {
@@ -303,6 +304,20 @@
                 "countries/netherlands/salary.html"
             ]
         },
+        "countries/netherlands/almere.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "Almere"
+            ],
+            "title": "Almere",
+            "related": [
+                "countries/netherlands/cost-of-living.html",
+                "countries/netherlands/house-buying.html",
+                "countries/netherlands/finance.html"
+            ]
+        },
         "countries/germany/index.html": {
             "breadcrumb": [
                 "Home",
@@ -404,7 +419,7 @@
         "Countries": "../../countries.html",
         "Netherlands": "index.html",
         "House Buying": "house-buying.html",
-        "House Selling": "sell-house.html",
+        "House Selling": "house-selling.html",
         "Buying a Second House": "second-house-buying.html",
         "Dutch Citizenship": "dutch-citizenship.html",
         "Visa & Immigration": "visa.html",
@@ -422,6 +437,7 @@
         "Jobs & Careers": "jobs.html",
         "Housing & Buying": "house-buying.html",
         "Daycare & Childcare": "daycare-childcare.html",
-        "SaveMoney & Groceries": "save-money-groceries.html"
+        "SaveMoney & Groceries": "save-money-groceries.html",
+        "Almere": "almere.html"
     }
 }
