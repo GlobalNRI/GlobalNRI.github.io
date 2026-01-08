@@ -52,9 +52,25 @@
             "title": "House Buying",
             "related": [
                 "countries/netherlands/second-house-buying.html",
+                "countries/netherlands/house-selling.html",
                 "countries/netherlands/cost-of-living.html",
                 "countries/netherlands/salary.html",
                 "countries/netherlands/visa.html"
+            ]
+        },
+        "countries/netherlands/house-selling.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "House Selling"
+            ],
+            "title": "House Selling",
+            "related": [
+                "countries/netherlands/house-buying.html",
+                "countries/netherlands/cost-of-living.html",
+                "countries/netherlands/salary.html",
+                "countries/netherlands/finance.html"
             ]
         },
         "countries/netherlands/second-house-buying.html": {
@@ -388,6 +404,7 @@
         "Countries": "../../countries.html",
         "Netherlands": "index.html",
         "House Buying": "house-buying.html",
+        "House Selling": "sell-house.html",
         "Buying a Second House": "second-house-buying.html",
         "Dutch Citizenship": "dutch-citizenship.html",
         "Visa & Immigration": "visa.html",
