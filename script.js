@@ -75,49 +75,4 @@ function loadCountry() {
     `;
 }
 
-// ---------- exchange rate widget ----------
-let currentRate = null;
-async function updateEurInr() {
-    const rateEl = document.getElementById('eurInrRate');
-    if (!rateEl) return;
-    rateEl.textContent = 'Loading rate...';
-    try {
-        const resp = await fetch('https://api.exchangerate.host/latest?base=EUR&symbols=INR');
-        const data = await resp.json();
-        if (data && data.rates && data.rates.INR) {
-            currentRate = parseFloat(data.rates.INR);
-            rateEl.textContent = `1 EUR = ₹${currentRate.toFixed(2)} (approx.)`;
-            updateConversion();
-            return;
-        }
-        rateEl.textContent = 'Rate unavailable';
-    } catch (e) {
-        console.error('failed to fetch EUR→INR rate', e);
-        rateEl.textContent = 'Rate unavailable';
-    }
-}
 
-function updateConversion() {
-    const eurInput = document.getElementById('eurAmount');
-    const resultEl = document.getElementById('inrResult');
-    if (eurInput && resultEl && currentRate != null) {
-        const eurVal = parseFloat(eurInput.value) || 0;
-        resultEl.textContent = (eurVal * currentRate).toFixed(2);
-    }
-}
-
-function initExchangeWidget() {
-    updateEurInr();
-    const eurInput = document.getElementById('eurAmount');
-    if (eurInput) eurInput.addEventListener('input', updateConversion);
-}
-
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initExchangeWidget);
-} else {
-    // script loaded after DOM ready (common with include-loader)
-    initExchangeWidget();
-}
-
-// refresh rate once per hour regardless
-setInterval(updateEurInr, 3600 * 1000);

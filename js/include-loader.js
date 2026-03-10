@@ -43,7 +43,7 @@
     }
     initNav();
     initSearchFilter();
-    // always ensure main script is loaded (for currency widget etc.)
+    // ensure main script is loaded once
     if(!document.querySelector('script[src="script.js"]')){
         const s = document.createElement('script');
         s.src = 'script.js';
