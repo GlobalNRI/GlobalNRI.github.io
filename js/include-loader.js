@@ -29,12 +29,26 @@
         if(!res.ok) throw new Error('Failed to load '+url);
         const html = await res.text();
         node.innerHTML = html;
+        // execute any scripts embedded in the included fragment
+        const scripts = node.querySelectorAll('script');
+        scripts.forEach(orig => {
+            const s = document.createElement('script');
+            if(orig.src) s.src = orig.src;
+            if(orig.textContent) s.textContent = orig.textContent;
+            document.head.appendChild(s);
+        });
       }catch(e){
         console.error(e);
       }
     }
     initNav();
     initSearchFilter();
+    // always ensure main script is loaded (for currency widget etc.)
+    if(!document.querySelector('script[src="script.js"]')){
+        const s = document.createElement('script');
+        s.src = 'script.js';
+        document.head.appendChild(s);
+    }
   }
 
   function initNav(){
