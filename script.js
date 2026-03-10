@@ -106,11 +106,18 @@ function updateConversion() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function initExchangeWidget() {
     updateEurInr();
     const eurInput = document.getElementById('eurAmount');
     if (eurInput) eurInput.addEventListener('input', updateConversion);
-});
+}
 
-// refresh every hour
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initExchangeWidget);
+} else {
+    // script loaded after DOM ready (common with include-loader)
+    initExchangeWidget();
+}
+
+// refresh rate once per hour regardless
 setInterval(updateEurInr, 3600 * 1000);
