@@ -427,6 +427,96 @@
                 "countries/germany/health-insurance.html",
                 "countries/germany/cost-of-living.html"
             ]
+        },
+        "countries/canada/index.html": {
+            "breadcrumb": ["Home", "Countries", "Canada"],
+            "title": "Canada",
+            "related": [
+                "countries/canada/visa.html",
+                "countries/canada/cost-of-living.html",
+                "countries/canada/health-insurance.html",
+                "countries/canada/save-money-groceries.html"
+            ]
+        },
+        "countries/canada/visa.html": {
+            "breadcrumb": ["Home", "Countries", "Canada", "Visa & Immigration"],
+            "title": "Visa & Immigration",
+            "related": [
+                "countries/canada/index.html",
+                "countries/canada/cost-of-living.html",
+                "countries/canada/health-insurance.html"
+            ]
+        },
+        "countries/canada/cost-of-living.html": {
+            "breadcrumb": ["Home", "Countries", "Canada", "Cost of Living"],
+            "title": "Cost of Living",
+            "related": [
+                "countries/canada/index.html",
+                "countries/canada/visa.html",
+                "countries/canada/save-money-groceries.html"
+            ]
+        },
+        "countries/canada/health-insurance.html": {
+            "breadcrumb": ["Home", "Countries", "Canada", "Health Insurance"],
+            "title": "Health Insurance",
+            "related": [
+                "countries/canada/index.html",
+                "countries/canada/visa.html",
+                "countries/canada/cost-of-living.html"
+            ]
+        },
+        "countries/canada/save-money-groceries.html": {
+            "breadcrumb": ["Home", "Countries", "Canada", "Save Money & Groceries"],
+            "title": "Save Money & Groceries",
+            "related": [
+                "countries/canada/index.html",
+                "countries/canada/cost-of-living.html"
+            ]
+        },
+        "countries/australia/index.html": {
+            "breadcrumb": ["Home", "Countries", "Australia"],
+            "title": "Australia",
+            "related": [
+                "countries/australia/visa.html",
+                "countries/australia/cost-of-living.html",
+                "countries/australia/health-insurance.html",
+                "countries/australia/save-money-groceries.html"
+            ]
+        },
+        "countries/australia/visa.html": {
+            "breadcrumb": ["Home", "Countries", "Australia", "Visa & Immigration"],
+            "title": "Visa & Immigration",
+            "related": [
+                "countries/australia/index.html",
+                "countries/australia/cost-of-living.html",
+                "countries/australia/health-insurance.html"
+            ]
+        },
+        "countries/australia/cost-of-living.html": {
+            "breadcrumb": ["Home", "Countries", "Australia", "Cost of Living"],
+            "title": "Cost of Living",
+            "related": [
+                "countries/australia/index.html",
+                "countries/australia/visa.html",
+                "countries/australia/save-money-groceries.html"
+            ]
+        },
+        "countries/australia/health-insurance.html": {
+            "breadcrumb": ["Home", "Countries", "Australia", "Health Insurance"],
+            "title": "Health Insurance",
+            "related": [
+                "countries/australia/index.html",
+                "countries/australia/visa.html",
+                "countries/australia/cost-of-living.html"
+            ]
+        },
+        "countries/australia/save-money-groceries.html": {
+            "breadcrumb": ["Home", "Countries", "Australia", "Save Money & Groceries"],
+            "title": "Save Money & Groceries",
+            "related": [
+                "countries/australia/index.html",
+                "countries/australia/cost-of-living.html"
+            ]
         }
     },
     "titles": {
@@ -449,6 +539,8 @@
         "Banking & Tax": "finance.html",
         "Parenting & Childcare": "parents-guide.html",
         "Germany": "index.html",
+        "Canada": "index.html",
+        "Australia": "index.html",
         "Jobs & Careers": "jobs.html",
         "Housing & Buying": "house-buying.html",
         "Daycare & Childcare": "daycare-childcare.html",
