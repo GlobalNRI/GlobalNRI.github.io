@@ -119,6 +119,21 @@
                 "countries/netherlands/dutch-citizenship.html"
             ]
         },
+        "countries/netherlands/dutch-learning-a2-exam.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "Dutch A2 Exam"
+            ],
+            "title": "Dutch A2 Exam",
+            "related": [
+                "countries/netherlands/visa.html",
+                "countries/netherlands/dutch-citizenship.html",
+                "countries/netherlands/paperwork-timeline.html",
+                "countries/netherlands/health-insurance.html"
+            ]
+        },
         "countries/netherlands/finance.html": {
             "breadcrumb": [
                 "Home",
