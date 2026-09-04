@@ -89,6 +89,20 @@
                 "countries/netherlands/visa.html"
             ]
         },
+        "countries/netherlands/dutch-self-defence-laws.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "Self-Defence Law"
+            ],
+            "title": "Self-Defence Law",
+            "related": [
+                "countries/netherlands/visa.html",
+                "countries/netherlands/dutch-citizenship.html",
+                "countries/netherlands/index.html"
+            ]
+        },
         "countries/netherlands/dutch-citizenship.html": {
             "breadcrumb": [
                 "Home",
@@ -426,6 +440,20 @@
             "related": [
                 "countries/germany/health-insurance.html",
                 "countries/germany/cost-of-living.html"
+            ]
+        },
+        "countries/germany/save-money-groceries.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Germany",
+                "Save Money & Groceries"
+            ],
+            "title": "Save Money & Groceries",
+            "related": [
+                "countries/germany/index.html",
+                "countries/germany/cost-of-living.html",
+                "countries/germany/health-insurance.html"
             ]
         },
         "countries/canada/index.html": {
