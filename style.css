@@ -278,6 +278,93 @@ footer {
 #clearSearch{padding:8px 10px;border-radius:var(--border-radius);background:var(--color-primary);color:var(--color-surface);border:none;cursor:pointer;transition:background var(--transition-fast)}
 #clearSearch:hover{background:var(--color-primary-dark)}
 .quick-links{margin-top:16px}
+
+/* ================= EXAM GUIDE ================= */
+.section-intro {
+    max-width: 850px;
+    margin-bottom: 25px;
+    color: var(--color-muted);
+}
+
+.exam-facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 16px;
+}
+
+.fact-card {
+    padding: 20px;
+    background: #F7FAFC;
+    border-top: 4px solid var(--color-accent);
+    border-radius: var(--border-radius);
+}
+
+.fact-label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--color-muted);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.fact-card strong {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--color-primary-dark);
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.fact-card p {
+    font-size: 14px;
+}
+
+.notice {
+    margin-top: 22px;
+    padding: 16px 18px;
+    background: #FFF7E8;
+    border-left: 4px solid var(--color-accent);
+}
+
+.table-wrap {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.exam-table {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: collapse;
+    background: var(--color-surface);
+}
+
+.exam-table th,
+.exam-table td {
+    padding: 12px;
+    border: 1px solid #D9DEE3;
+    text-align: left;
+    vertical-align: top;
+}
+
+.exam-table th {
+    background: var(--color-primary-dark);
+    color: var(--color-surface);
+}
+
+.exam-table tbody tr:nth-child(even) {
+    background: #F7FAFC;
+}
+
+.knm-section .card ul {
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .exam-table {
+        min-width: 700px;
+    }
+}
 .quick-links h3{font-size:18px;color:var(--color-primary-dark);margin-bottom:8px}
 .quick-links ul{list-style:none;padding:0}
 .quick-links li{margin-bottom:6px}
