@@ -470,8 +470,24 @@
             "title": "Save Money & Groceries",
             "related": [
                 "countries/canada/index.html",
-                "countries/canada/cost-of-living.html"
+                "countries/canada/cost-of-living.html",
+                "countries/canada/housing.html"
             ]
+        },
+        "countries/canada/jobs.html": {
+            "breadcrumb": ["Home", "Countries", "Canada", "Jobs & Careers"],
+            "title": "Jobs & Careers",
+            "related": ["countries/canada/index.html", "countries/canada/visa.html", "countries/canada/cost-of-living.html"]
+        },
+        "countries/canada/housing.html": {
+            "breadcrumb": ["Home", "Countries", "Canada", "Housing & Renting"],
+            "title": "Housing & Renting",
+            "related": ["countries/canada/index.html", "countries/canada/cost-of-living.html", "countries/canada/family-education.html"]
+        },
+        "countries/canada/family-education.html": {
+            "breadcrumb": ["Home", "Countries", "Canada", "Family & Education"],
+            "title": "Family & Education",
+            "related": ["countries/canada/index.html", "countries/canada/housing.html", "countries/canada/health-insurance.html"]
         },
         "countries/australia/index.html": {
             "breadcrumb": ["Home", "Countries", "Australia"],
@@ -515,8 +531,24 @@
             "title": "Save Money & Groceries",
             "related": [
                 "countries/australia/index.html",
-                "countries/australia/cost-of-living.html"
+                "countries/australia/cost-of-living.html",
+                "countries/australia/housing.html"
             ]
+        },
+        "countries/australia/jobs.html": {
+            "breadcrumb": ["Home", "Countries", "Australia", "Jobs & Careers"],
+            "title": "Jobs & Careers",
+            "related": ["countries/australia/index.html", "countries/australia/visa.html", "countries/australia/cost-of-living.html"]
+        },
+        "countries/australia/housing.html": {
+            "breadcrumb": ["Home", "Countries", "Australia", "Housing & Renting"],
+            "title": "Housing & Renting",
+            "related": ["countries/australia/index.html", "countries/australia/cost-of-living.html", "countries/australia/family-education.html"]
+        },
+        "countries/australia/family-education.html": {
+            "breadcrumb": ["Home", "Countries", "Australia", "Family & Education"],
+            "title": "Family & Education",
+            "related": ["countries/australia/index.html", "countries/australia/housing.html", "countries/australia/health-insurance.html"]
         }
     },
     "titles": {
