@@ -133,6 +133,21 @@
                 "countries/netherlands/dutch-citizenship.html"
             ]
         },
+        "countries/netherlands/visa-types.html": {
+            "breadcrumb": [
+                "Home",
+                "Countries",
+                "Netherlands",
+                "Visa Types"
+            ],
+            "title": "Visa Types",
+            "related": [
+                "countries/netherlands/visa.html",
+                "countries/netherlands/jobs.html",
+                "countries/netherlands/paperwork-timeline.html",
+                "countries/netherlands/dutch-citizenship.html"
+            ]
+        },
         "countries/netherlands/dutch-learning-a2-exam.html": {
             "breadcrumb": [
                 "Home",
