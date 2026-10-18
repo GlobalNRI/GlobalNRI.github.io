@@ -7,9 +7,29 @@
     <title>Inviting Parents to the Netherlands | GlobalNRI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Checklist and document guide to invite parents to the Netherlands (family visit / short-stay visas).">
+        content="Quick printable checklist for parents visiting the Netherlands: applicant documents, sponsor papers, insurance, travel plans and VFS appointment preparation.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../../style.css">
+    <style>
+        .visit-checklist { max-width: 1120px; }
+        .visit-checklist .checklist-note { padding: 16px 20px; margin: 20px 0; border-left: 4px solid #c33764; background: #fff4f6; }
+        .visit-checklist .checklist-wrap { overflow-x: auto; margin: 20px 0 30px; }
+        .visit-checklist table { width: 100%; min-width: 700px; border-collapse: collapse; }
+        .visit-checklist th, .visit-checklist td { padding: 11px 13px; border: 1px solid #d8dee8; text-align: left; vertical-align: middle; }
+        .visit-checklist th { background: #1d2671; color: #fff; }
+        .visit-checklist tbody tr:nth-child(even) { background: #f5f7fa; }
+        .visit-checklist .group-row th { background: #e9edf5; color: #252b40; }
+        .visit-checklist .item-number { width: 70px; text-align: center; font-weight: 700; }
+        .visit-checklist .ready-cell { width: 76px; text-align: center; }
+        .visit-checklist input[type="checkbox"] { width: 20px; height: 20px; accent-color: #1d7a58; cursor: pointer; }
+        .visit-checklist label { cursor: pointer; }
+        .visit-checklist .checklist-tip { color: #4b5563; font-size: 0.95rem; }
+        @media print {
+            .visit-checklist .checklist-wrap { overflow: visible; }
+            .visit-checklist table { min-width: 0; }
+            .visit-checklist .ready-cell { print-color-adjust: exact; }
+        }
+    </style>
 </head>
 
 <body>
@@ -76,65 +96,75 @@
             <li>If parent finances: recent bank statements, pension statements, or proof of regular income.</li>
         </ul>
 
-        <h2>6. Additional Supporting Documents</h2>
-        <ul class="custom-bullets">
-            <li>Sponsor's employment letter (if employed) showing role, salary and contract period.</li>
-            <li>Copy of sponsor's recent payslips (3 months) or tax returns.</li>
-            <li>Proof of accommodation: rental agreement, home ownership papers or a letter from landlord.</li>
-            <li>Proof of family event (if applicable): wedding invite, medical appointment letter, funeral notice, etc.
-            </li>
-        </ul>
+        <section class="content visit-checklist">
+            <h1>Parents' Netherlands Visit: Document Checklist</h1>
 
-        <h2>7. Document Legalization & Translation</h2>
-        <ul class="custom-bullets">
-            <li>Indian documents (birth/marriage certificates) may require notarisation and MEA apostille/legalisation
-                when requested by the Dutch authorities — check the consulate guidance.</li>
-            <li>Any documents not in English / Dutch may require certified translations.
-            </li>
-        </ul>
+            <p>Use this table to prepare a short-stay family-visit application. It separates the visitors' documents from
+                the sponsor's documents so the family can quickly see who needs to provide each item.</p>
+            <p class="checklist-note"><strong>Before you start:</strong> this is a preparation checklist, not a guarantee
+                that every item is required. Follow the current NetherlandsWorldwide/VFS checklist for the applicant's
+                location and case. Keep originals and copies separate. Do not buy non-refundable tickets before the visa
+                decision.</p>
 
-        <h2>8. Visa Appointment & Processing</h2>
-        <ul class="custom-bullets">
-            <li>Book appointment at VFS Global for the Netherlands or the embassy handling Schengen visas in your
-                region.</li>
-            <li>Submit application, biometric data, and original supporting documents as required. Processing times vary
-                (2–15 working days typical for short-stay; longer for complex cases).</li>
-            <li>Keep copies of everything submitted; collect passport when notified.</li>
-        </ul>
+            <h2>Quick checklist</h2>
+            <p class="checklist-tip">Tick items as you collect them. On phones, scroll the table horizontally to see the
+                status column. You can print this page for an appointment folder.</p>
+            <div class="checklist-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="item-number">No.</th>
+                            <th scope="col">Document</th>
+                            <th scope="col">Who / preparation note</th>
+                            <th scope="col" class="ready-cell">Ready</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="group-row"><th colspan="4" scope="colgroup">Applicant (parent visiting the Netherlands)</th></tr>
+                        <tr><td class="item-number">1</td><td><label for="doc-01">Original passport</label></td><td>Check validity and blank pages against the current visa instructions.</td><td class="ready-cell"><input id="doc-01" type="checkbox" aria-label="Original passport ready"></td></tr>
+                        <tr><td class="item-number">2</td><td><label for="doc-02">Passport photos (4)</label></td><td>Recent photos that meet the current Schengen/VFS photo specifications.</td><td class="ready-cell"><input id="doc-02" type="checkbox" aria-label="Four passport photos ready"></td></tr>
+                        <tr><td class="item-number">3</td><td><label for="doc-03">VFS appointment letter</label></td><td>Print or save the appointment confirmation.</td><td class="ready-cell"><input id="doc-03" type="checkbox" aria-label="VFS appointment letter ready"></td></tr>
+                        <tr><td class="item-number">4</td><td><label for="doc-04">Sponsorship letter(s)</label></td><td>Include the required sponsorship/financial-guarantee form if the sponsor pays for the visit.</td><td class="ready-cell"><input id="doc-04" type="checkbox" aria-label="Sponsorship letters ready"></td></tr>
+                        <tr><td class="item-number">5</td><td><label for="doc-05">Completed visa application form</label></td><td>Complete and sign as instructed for the application location.</td><td class="ready-cell"><input id="doc-05" type="checkbox" aria-label="Visa form ready"></td></tr>
+                        <tr><td class="item-number">6</td><td><label for="doc-06">Passport front-page and back-page copies</label></td><td>Clear copies of the applicant's passport pages requested by VFS.</td><td class="ready-cell"><input id="doc-06" type="checkbox" aria-label="Passport page copies ready"></td></tr>
+                        <tr><td class="item-number">7</td><td><label for="doc-07">Aadhaar card</label></td><td>Applicant's Aadhaar; prepare the original and copy if the local checklist asks for both.</td><td class="ready-cell"><input id="doc-07" type="checkbox" aria-label="Applicant Aadhaar card ready"></td></tr>
+                        <tr><td class="item-number">8</td><td><label for="doc-08">Flight itinerary, including return</label></td><td>Use a reservation/itinerary; avoid non-refundable tickets before approval.</td><td class="ready-cell"><input id="doc-08" type="checkbox" aria-label="Return flight itinerary ready"></td></tr>
+                        <tr><td class="item-number">9</td><td><label for="doc-09">Travel medical insurance</label></td><td>Cover the full trip and meet the current Schengen requirements.</td><td class="ready-cell"><input id="doc-09" type="checkbox" aria-label="Travel health insurance ready"></td></tr>
+                        <tr><td class="item-number">10</td><td><label for="doc-10">Invitation letter</label></td><td>From the Netherlands host; state purpose, dates, address and accommodation plan.</td><td class="ready-cell"><input id="doc-10" type="checkbox" aria-label="Invitation letter ready"></td></tr>
+                        <tr><td class="item-number">11</td><td><label for="doc-11">Applicant's covering letter</label></td><td>Summarise the trip, who is paying, intended dates and reasons to return home.</td><td class="ready-cell"><input id="doc-11" type="checkbox" aria-label="Applicant covering letter ready"></td></tr>
+                        <tr><td class="item-number">12</td><td><label for="doc-12">Bank passbook</label></td><td>Applicant's passbook, if applicable and requested.</td><td class="ready-cell"><input id="doc-12" type="checkbox" aria-label="Bank passbook ready"></td></tr>
+                        <tr><td class="item-number">13</td><td><label for="doc-13">Bank statements</label></td><td>Applicant's recent statements for the period specified by VFS/consulate.</td><td class="ready-cell"><input id="doc-13" type="checkbox" aria-label="Applicant bank statements ready"></td></tr>
+                        <tr><td class="item-number">14</td><td><label for="doc-14">Property documents <em>(optional)</em></label></td><td>Applicant's supporting evidence of ties to their home country, if available.</td><td class="ready-cell"><input id="doc-14" type="checkbox" aria-label="Optional property documents ready"></td></tr>
+                        <tr><td class="item-number">15</td><td><label for="doc-15">LIC payment proof <em>(optional)</em></label></td><td>Applicant's policy/payment evidence, if available.</td><td class="ready-cell"><input id="doc-15" type="checkbox" aria-label="Optional LIC payment proof ready"></td></tr>
+                        <tr><td class="item-number">16</td><td><label for="doc-16">Midwife letter <em>(optional, if visiting during pregnancy)</em></label></td><td>Include a letter from the midwife if the visit is connected to a pregnancy.</td><td class="ready-cell"><input id="doc-16" type="checkbox" aria-label="Optional midwife letter ready"></td></tr>
 
-        <h2>9. Practical Tips & Timeline</h2>
-        <ul class="custom-bullets">
-            <li>Start document collection 2–3 months in advance (birth certificates, legalized copies, passport
-                validity).</li>
-            <li>Allow time for translations and apostille (3–6 weeks depending on your local processing).</li>
-            <li>Do not purchase non-refundable travel until visa is granted.</li>
-        </ul>
+                        <tr class="group-row"><th colspan="4" scope="colgroup">Sponsor in the Netherlands</th></tr>
+                        <tr><td class="item-number">17</td><td><label for="doc-17">Sponsor's passport copy</label></td><td>Clear copy of the sponsor's identity page.</td><td class="ready-cell"><input id="doc-17" type="checkbox" aria-label="Sponsor passport copy ready"></td></tr>
+                        <tr><td class="item-number">18</td><td><label for="doc-18">Sponsor's Dutch residence-permit card copy</label></td><td>Copy both sides if applicable.</td><td class="ready-cell"><input id="doc-18" type="checkbox" aria-label="Sponsor residence permit copy ready"></td></tr>
+                        <tr><td class="item-number">19</td><td><label for="doc-19">Sponsor's Aadhaar copy</label></td><td>If the sponsor has an Aadhaar card and it is requested.</td><td class="ready-cell"><input id="doc-19" type="checkbox" aria-label="Sponsor Aadhaar copy ready"></td></tr>
+                        <tr><td class="item-number">20</td><td><label for="doc-20">Sponsor's employment contract</label></td><td>Current contract or employer statement, if applicable.</td><td class="ready-cell"><input id="doc-20" type="checkbox" aria-label="Sponsor employment contract ready"></td></tr>
+                        <tr><td class="item-number">21</td><td><label for="doc-21">Sponsor's recent payslips</label></td><td>Use the number of months requested for the sponsorship application.</td><td class="ready-cell"><input id="doc-21" type="checkbox" aria-label="Sponsor payslips ready"></td></tr>
+                        <tr><td class="item-number">22</td><td><label for="doc-22">Sponsor's bank statements</label></td><td>Include if required to support the financial undertaking.</td><td class="ready-cell"><input id="doc-22" type="checkbox" aria-label="Sponsor bank statements ready"></td></tr>
 
-        <h2>10. Sample Sponsor Declaration (brief)</h2>
-        <p>"I, [Full name], resident at [address], holding passport/residence permit [no.], hereby invite my
-            [mother/father], [full name], passport no. [xxxx], to visit me in the Netherlands from [date] to [date]. I
-            will provide accommodation at [address] and financially support their stay if required."</p>
+                        <tr class="group-row"><th colspan="4" scope="colgroup">Sponsor's spouse (if applicable)</th></tr>
+                        <tr><td class="item-number">23</td><td><label for="doc-23">Sponsor's spouse's passport copy</label></td><td>Clear copy of the identity page.</td><td class="ready-cell"><input id="doc-23" type="checkbox" aria-label="Sponsor spouse passport copy ready"></td></tr>
+                        <tr><td class="item-number">24</td><td><label for="doc-24">Sponsor's spouse's Dutch residence-permit card copy</label></td><td>Copy both sides if applicable.</td><td class="ready-cell"><input id="doc-24" type="checkbox" aria-label="Sponsor spouse residence permit copy ready"></td></tr>
+                    </tbody>
+                </table>
+            </div>
 
-        <hr>
+            <h2>Before the appointment</h2>
+            <ul class="custom-bullets">
+                <li>Check the latest NetherlandsWorldwide/VFS checklist for the applicant's city and visa category; they decide which originals, copies and translations are needed.</li>
+                <li>Keep originals separate from photocopies and arrange documents in the order requested by the visa centre.</li>
+                <li>Ensure names, passport numbers and travel dates match across the application, invitation, insurance and itinerary.</li>
+                <li>If a document is not in an accepted language, confirm translation and legalisation requirements before the appointment.</li>
+                <li>Relationship evidence, proof of accommodation and additional financial or employment evidence may also be requested depending on the case.</li>
+            </ul>
+            <p><strong>Note:</strong> A visit of up to 90 days normally uses the Schengen short-stay process. A longer stay follows a different residence-permit route. Always use the current official checklist for the correct application.</p>
 
-        <p><strong>Note:</strong> Embassy/consulate may request additional documents. Always follow the latest
-            VFS/consulate checklist for your city. This guide is informational and not legal advice.</p>
-
-        <!-- Related Links (generated by nav-helper.js) -->
-        <section class="related-section">
-            <h2>Related Pages</h2>
-            <div class="related-links" data-related-links></div>
-        </section>
-
-    </section>
-
-    <!-- ================= FOOTER ================= -->
-    <footer>
-        © 2026 GlobalNRI | Invite Parents Guide
-    </footer>
-
-    <script src="../../js/include-loader.js"></script>
-    <script src="../../js/nav-helper.js"></script>
-</body>
-
-</html>
+            <h2>Official application information</h2>
+            <ul class="custom-bullets">
+                <li><a href="https://www.netherlandsworldwide.nl/visa-the-netherlands/schengen-visa/apply" target="_blank" rel="noopener">NetherlandsWorldwide — Apply for a Schengen visa</a></li>
+                <li><a href="https://visa.vfsglobal.com/ind/en/nld/" target="_blank" rel="noopener">VFS Global India — Netherlands visa information</a></li>
+            </ul>
